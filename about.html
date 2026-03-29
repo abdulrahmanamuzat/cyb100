@@ -1,62 +1,53 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Me</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 40px;
-        line-height: 1.6;
-        background-color: #f4f4f4;
-      }
-      .container {
-        max-width: 800px;
-        margin: 0 auto;
-        background-color: white;
-        padding: 30px;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      }
-      h1 {
-        color: #333;
-        border-bottom: 3px solid #007bff;
-        padding-bottom: 10px;
-      }
-      img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 8px;
-        margin: 20px 0;
-      }
-      p {
-        color: #555;
-        font-size: 16px;
-      }
-
-      .profile-image {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        object-fit: cover;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <h1>About Me</h1>
-      <img
-        class="profile-image"
-        src="images/F24D3D63-23F5-4385-BEDF-0C12BD8A6EAC.jpeg"
-        alt="Profile Image"
-      />
-      <p>
-        Welcome to my about page! This page contains information about me, my
-        interests, and my background. I am passionate about web development,
-        technology, and continuous learning. Feel free to explore my projects
-        and get to know more about my work and experience.
-      </p>
-    </div>
-  </body>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>About Me</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+      <link rel="stylesheet" href="styles/app.css" />
+   </head>
+   <body class="app">
+      <nav class="navbar navbar-expand-lg navbar-dark navbar-purple sticky-top">
+         <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">🎓 Cyb 100</a>
+            <button
+               class="navbar-toggler"
+               type="button"
+               data-bs-toggle="collapse"
+               data-bs-target="#navbarNav"
+               aria-controls="navbarNav"
+               aria-expanded="false"
+               aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="syllabus.html">Syllabus</a></li>
+                  <li class="nav-item"><a class="nav-link" href="assignments.html">Assignments</a></li>
+                  <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+                  <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <div class="content-wrapper">
+         <div class="container">
+            <h1 class="mb-4">About Me</h1>
+            <img
+               class="rounded-circle mb-4"
+               src="images/F24D3D63-23F5-4385-BEDF-0C12BD8A6EAC.jpeg"
+               alt="Profile Image"
+               style="width: 150px; height: 150px; object-fit: cover" />
+            <p>
+               Welcome to my about page! This page contains information about me, my interests, and my background. I am
+               passionate about web development, technology, and continuous learning. Feel free to explore my projects
+               and get to know more about my work and experience.
+            </p>
+            <a href="index.html" class="btn btn-purple btn-sm">← Back to Home</a>
+         </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+   </body>
 </html>

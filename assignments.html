@@ -1,36 +1,58 @@
 <!doctype html>
-<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cyb 100 | Assignments</title>
-    <link rel="stylesheet" href="styles/app.css" />
-  </head>
-  <body class="app bg-grey">
-    <div class="container bg-dark-green">
-      <h1>Course Assignments</h1>
-      <p>
-        Here you will find the assignments for our Intro to Web Development
-        course.
-      </p>
-      <ul>
-        <li>
-          <a href="assignment1.html">Assignment 1: Build a Personal Website</a>
-        </li>
-        <li><a href="assignment2.html">Assignment 2: Create a Portfolio</a></li>
-        <li>
-          <a href="assignment3.html">Assignment 3: JavaScript Interactivity</a>
-        </li>
-        <li>
-          <a href="final_project.html"
-            >Final Project: Build a Complete Website</a
-          >
-        </li>
-      </ul>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Cyb 100 | Assignments</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+      <link rel="stylesheet" href="styles/app.css" />
+   </head>
+   <body class="app">
+      <nav class="navbar navbar-expand-lg navbar-dark navbar-purple sticky-top">
+         <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">🎓 Cyb 100</a>
+            <button
+               class="navbar-toggler"
+               type="button"
+               data-bs-toggle="collapse"
+               data-bs-target="#navbarNav"
+               aria-controls="navbarNav"
+               aria-expanded="false"
+               aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="syllabus.html">Syllabus</a></li>
+                  <li class="nav-item"><a class="nav-link active" href="assignments.html">Assignments</a></li>
+                  <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+                  <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <div class="content-wrapper">
+         <div class="container">
+            <h1>Course Assignments</h1>
+            <p>Here you will find the assignments for our Intro to Web Development course.</p>
+            <ul>
+               <li>
+                  <a href="assignment1.html">Assignment 1: Build a Personal Website</a>
+               </li>
+               <li><a href="assignment2.html">Assignment 2: Create a Portfolio</a></li>
+               <li>
+                  <a href="assignment3.html">Assignment 3: JavaScript Interactivity</a>
+               </li>
+               <li>
+                  <a href="final_project.html">Final Project: Build a Complete Website</a>
+               </li>
+            </ul>
 
-      <hr />
-      <a href="index.html">Back to Home</a>
-    </div>
-  </body>
+            <hr />
+            <a href="index.html" class="btn btn-purple btn-sm">← Back to Home</a>
+         </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+   </body>
 </html>
